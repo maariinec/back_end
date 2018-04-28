@@ -1,0 +1,73 @@
+
+body{
+  width: 100%;
+  margin: 0;
+}
+
+/*------------ Police------------ */
+
+@font-face {
+  font-family: RobotoSlab-Light;
+  src: url("font/RobotoSlab-Light.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: Rubik-Medium;
+  src: url("font/Rubik-Medium.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: Rubik-Regular;
+  src: url('font/Rubik-Regular.ttf');
+  font-weight: normal;
+}
+@font-face {
+font-family: Artifika-Regular;
+src: url('font/Artifika-Regular.ttf');
+font-weight: normal;
+}
+
+
+/* ------------------ navigation et header ---------------*/
+
+nav{
+  opacity: 0.9;
+  background: linear-gradient(to right, #000099 0%, #660066 100%);
+  font-family: inherit;
+}
+
+nav ul li:after, #acceuil:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .4s ease, background-color .4s ease;
+}
+
+nav ul li:hover:after, #acceuil:hover:after {
+    width: 100%;
+    background: #ff6f00 ;
+}
+
+#navbar li a {
+    padding: 0 20px;
+    font-family: inherit;
+}
+
+header{
+  background-color: #b0bec5;
+  border-radius: 0px 0 10px 10px;
+  font-family: 'RobotoSlab-Light';
+  margin-top: 66px;
+}
+
+h2{
+  font-family:  inherit;
+  color:#ff6f00 ;
+}
+
+a{
+ font-weight: bold;
+}

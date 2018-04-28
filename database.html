@@ -1,0 +1,257 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link href="css/reset.css" rel="stylesheet"/>
+    <link href="css/learn.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="css/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="css/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/styles2.css">
+    <title>Back-End Database</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <a class="navbar-brand" id="acceuil" href="index.html"> ACCUEIL  </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"> </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="mx-auto">
+          <ul id="navbar" class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="database.html">  MySQL  </a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="terminal.html"> SYSTEME  </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="git.html">  GIT/GITHUB  </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <img src="image/logo.png" alt="logo_du_site" width="50px" class="rounded-circle bg-white">
+      </div>
+    </div>
+  </nav>
+  <div class="linux_header">
+  <header class="mt-5">
+      <div class="col-md-12 col-xs-12 col-12">
+          <i class="fa fa-5x fa-database" aria-hidden="true"></i>
+          <h1>MySQL</h1>
+          <p>
+            Une base de données est une collection de données organisée de
+            façon à être facilement accessible, administrée et mise à jour.
+            Les bases de données peuvent être classées par le type de contenu
+            qu’elles renferment : bibliographique, full text, images ou numériques.
+          </p>
+
+          <p>
+            Le terme Base de Données est apparu en 1964, s'en suivirent de nombreux
+            modèles de bases de données expérimentales et factuelles,
+            d'abord utilisées par l'armée et les spécialistes du sujet.
+            Apparues dans les années 1990, les bases de données
+            objet-relationnel permettent d'organiser les données sous la
+            forme de tables définies de façon formelle, à partir desquelles
+            les données sont accessibles et assemblées sans avoir à
+            réorganiser les tables de la base de données.
+          </p>
+
+          <p>
+            Nous utiliserons lors de nos cours le système de gestion de bases
+            de données relationnelles (SGBDR) MySQL.
+          </p>
+
+          <p>
+            MySQL fait partie des logiciels de
+            gestion de base de données les plus utilisés au monde,
+            (applications web principalement) par les professionnels.
+          </p>
+
+          <p>
+            Depuis mai 2009, son créateur Michael Widenius a créé MariaDB
+            pour continuer son développement en tant que projet Open Source.
+          </p>
+          <p>
+            Pour nous familiariser avec ce système, rien de mieux que la
+            pratique !
+          </p><br>
+
+  </header>
+    <div class="container--display-flex container--justify-start">
+      <!--<aside class="menu--left">
+        <ul>
+          <li>
+            <h2>Base de Données</h2>
+            <ul>
+              <li><a href=""><span>Cours 1</span></a></li>
+              <li><a href=""><span>Cours 2</span></a></li>
+              <li><a href=""><span>Cours 3</span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </aside><-->
+      <section class="content--right">
+        <h2>
+          Installation en interface graphique.
+        </h2>
+        <p>
+          Pour être le plus utilisé et libre, nous allons commencer par ceci :
+        </p>
+        <p>
+          Les commandes pour l'installation et le téléchargement peuvent être
+          trouvées sur le site https://www.mysql.com.
+        </p>
+
+        <h2>Installation depuis le terminal.</h2>
+
+        <p>Entrer les commandes suivantes dans un terminal :</p>
+
+        <p>Installer les paquets mysql client</p>
+        <p><code>sudo apt-get install mysql-client</code></p>
+
+        <p>Installer les paquets mysql server</p>
+        <p><code>sudo apt-get install mysql-server</code></p>
+
+        <p> phpMyAdmin (PMA) est une application Web de gestion pour les
+            systèmes de gestion de base de données MySQL réalisée en PHP et
+            distribuée sous licence GNU GPL.
+        </p>
+
+        <p>Installer les paquets de phpmyadmin</p>
+
+        <p><code>sudo apt-get install phpmyadmin</code></p>
+
+        <p>
+          Une fois ces commandes exécutées, tous les paquets nécessaires
+          sont maintenant installés et vous pouvez commencer à interagir
+          avec la BDD.
+        </p>
+
+        <p>Toujours depuis le terminal, vous pouvez vous connecter à mysql via la commande suivante :</p>
+
+        <p><code>mysql -u root -p</code></p>
+
+        <p>
+          Il vous sera demandé un mot de passe, celui que vous aurez saisi lors de
+          l'installation des paquets précédents.
+        </p>
+
+        <p>
+          Entrez le sur votre clavier et appuyez
+          sur Entrée.Vous êtes maintenant connectés à mysql et pouvez interagir avec
+          vos bases de données, voici donc quelques commandes.
+        </p>
+
+        <h2>Commandes relatives aux Bases de Données</h2>
+
+        <p>Créer une Base de Données</p>
+        <p><code><em class="command">CREATE DATABASE</em> [nom_de_la_base_de_données];</code></p>
+
+        <p>Supprimer une Base de Données</p>
+        <p><code><em class="command">DROP DATABASE</em> [nom_de_la_base_de_données];</code></p>
+
+        <p>Lister les Bases de Données</p>
+        <p><code><em class="command">SHOW DATABASES</em>;</code></p>
+
+        <p>Spécifier la Base de Données avec laquelle interagir</p>
+        <p><code><em class="command">USE</em> [nom_de_la_base_de_données];</code></p>
+
+        <h2>Commandes relatives aux Tables</h2>
+        <p>Créer une Table dans une Base de Données</p>
+        <p><code><em class="command">CREATE TABLE</em> [nom_de_la_table];</code></p>
+
+        <p>Afficher la structure d'une table</p>
+        <p><code><em class="command">DESCRIBE</em> [nom_de_la_table];</code></p>
+
+        <p>Supprimer une Table</p>
+        <p><code><em class="command">DROP TABLE</em> [nom_de_la_table];</code></p>
+
+        <p>Renommer une Table</p>
+        <p><code><em class="command">ALTER TABLE</em> [nom_de_la_table] <em class="command">RENAME AS</em> [nouveau_nom_de_la_table];</code></p>
+
+        <p>Vider une Table</p>
+        <p><code><em class="command">TRUNCATE</em> [nom_de_la_table];</code></p>
+
+        <h2>Les types de données</h2>
+
+        <p>
+          Les types de données utilisées sont définis lors de la création de votre table.
+        </p>
+
+        <p>Voici quelques types de données que vous pourriez rencontrer :</p>
+
+        <p>Le type <code>INT</code> : Nombres entiers, l'id est habituellement de ce type.</p>
+
+        <p>Le type <code>DECIMAL</code> : Nombres décimaux.</p>
+        <p>Le type <code>CHAR/VARCHAR</code> : Permet de saisir du texte et des chaines de caractères, avec une taille fixe maximale de
+           255 caractères.
+        </p>
+
+        <p>Le type <code>DATE</code> : Permet de saisir des dates, sous le format AAAA-MM-JJ.</p>
+
+        <p>Exemple de création de table :</p>
+
+        <p>
+          <code>CREATE TABLE [nom_de_la_table] (</code>
+        </p>
+        <p>
+          <code>id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,</code>,
+        </p>
+        <p>
+          <code>nom VARCHAR(20),</code>,
+        </p>
+        <p>
+          <code>prenom VARCHAR(20),</code>,
+        </p>
+        <p>
+          <code>phone VARCHAR(20)</code>,
+        </p>
+        <p>
+          <code> datedenaissance DATE)</code>;
+        </p>
+
+
+        <p>Un exemple de selection sur une table donnée.</p>
+
+        <p><code>SELECT * FROM nom_de_la_table;</code> : Affiche tout le contenu de la table.</p>
+
+
+        <p><code>DESCRIBE nom_de_la_base_de_donnees;</code> : Affiche le contenu de la base de données.</p>
+
+        <p>
+            La syntaxe d’UNION est simplissime :il vous suffit
+            d’ajouter UNION entre deux requêtes pour les unir.
+            Le nombre de requêtes qu'il est possible d'unir successivement
+            est illimité.
+         </p>
+
+         <p>
+          <code>
+            SELECT...
+            UNION
+            SELECT...
+          </code>
+        </p>
+
+          <p>Exemple d'union :</p>
+
+          <p><code>SELECT Animal.* FROM Animal</code></p>
+          <p><code>INNER JOIN Espece ON Animal.espece_id = Espece.id</code></p>
+          <p><code>WHERE Espece.nom_courant = 'Chat'</code></p>
+          <p><code>UNION</code></p>
+          <p><code>SELECT Animal.* FROM Animal </code></p>
+          <p><code>INNER JOIN Espece ON Animal.espece_id = Espece.id</code></p>
+          <p><code>WHERE Espece.nom_courant = 'Tortue d''Hermann';</code></p>
+
+      </section>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</html>

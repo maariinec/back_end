@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="css/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="css/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/styles2.css">
+    <title> Back-End Git/Github </title>
+</head>
+<body>
+
+  <<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a class="navbar-brand" id="acceuil" href="index.html"> ACCUEIL  </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"> </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="mx-auto">
+        <ul id="navbar" class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="database.html">  MySQL  </a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="terminal.html"> SYSTEME  </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="git.html">  GIT/GITHUB  </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <img src="image/logo.png" alt="logo_du_site" width="50px" class="rounded-circle bg-white">
+    </div>
+  </div>
+</nav>
+
+<div class="linux_header" id="git_header">
+<header class="mt-5">
+    <div class="col-md-12 col-xs-12 col-12">
+        <i class="fa fa-github fa-5x d-lg-inline" aria-hidden="true"></i>
+
+        <h1>Git/Github</h1>
+        <p> Git est un logiciel de gestion de fichiers décentralisé, crée
+            par Linus Torvalds en 2005.
+        </p>
+
+        <p> Sa particularité réside dans son organisation en arborescence,
+            le dépôt original servant de tronc principal et les branches
+            crées permettant de travailler indépendamment sur plusieurs
+            versions du projet. Git permet de fusionner aisément plusieurs
+            branches pour intégrer les avancées.
+        </p>
+
+        <p> Il est le système de versioning le plus utilisé par les
+            développeurs actuellement, réputé pour faciliter le travail en
+            équipe et le développement de projets.
+
+            Il est pensé pour être utilisé essentiellement en local.
+        </p>
+
+   </div>
+
+</header>
+</div>
+<section class="content--right">
+ <h1>Commandes de base</h1>
+
+      <h2> Installation de Git sous Linux</h2>
+      <p> Télécharger la dernière version de Git pour le système
+          d'exploitation de l'utilisateur sur : http://git-scm.com/downloads.
+      </p>
+
+      <p> Suivre les instructions.</p>
+
+      <p> Entrer successivement les commandes ci-dessous dans le terminal
+          pour définir le nom et l'e-mail qui seront utilisés sur Github.
+       </p>
+
+      <p><code>git config [--global user.name] ["Votre nom ou pseudo"]</code></p>
+      <p><code>git config [--global user.email] ["Votre@email.com"]</code></p>
+      <p>  Entrer la command "git" dans le terminal pour vérifier si
+           l'installation s'est correctement effectuée. Une page d'instructions sur
+           l'utilisation de Git devrait s'afficher dans le terminal. </p>
+      <h2>Les commandes de création d'un dépôt</h2>
+
+      <p><code>git init </code> : Créer un dépôt Git local</p>
+
+      <p><code>git clone [adresseACloner]  </code> : Cloner un dépôt préexistant sur Github dans le répertoire de travail.</p>
+
+      <h2>Commandes d'interaction avec des dépôts distants</h2>
+
+      <p><code>git pull </code> : Mettre à jour le dépôt local par rapport au dépôt distant. </p>
+
+      <p><code>git push </code> : Envoyer les données du dépôt local dans le dépôt distant. </p>
+
+      <h2>Les commandes de gestion des branches</h2>
+
+      <p><code>git branch </code>: Créer une nouvelle branche contenant une copie de la branche master.</p>
+
+      <p><code>git merge </code>: Fusionner deux branches de développement.</p>
+
+      <h2>Les commandes de gestions des fichiers</h2>
+
+      <p><code>git add [nomDuFichier] </code>: Ajouter le fichier en paramètre dans
+            le repertoire de travail.</p>
+
+      <p><code>git commit -m ["message"] </code> : Validation des modifications des fichiers dans le répertoire de travail.</p>
+
+      <p><code>git log </code> : Afficher la liste  des commits effectués.</p>
+
+      <p><code>git status </code> : Afficher l'état courant du répertoire de travail.</p>
+
+  </section>
+</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="css/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="css/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/styles2.css">
+  <title> Back-End Système </title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a class="navbar-brand" id="acceuil" href="index.html"> ACCUEIL  </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"> </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="mx-auto">
+        <ul id="navbar" class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="database.html">  MySQL  </a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="terminal.html"> SYSTEME  </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="git.html">  GIT/GITHUB  </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <img src="image/logo.png" alt="logo_du_site" width="50px" class="rounded-circle bg-white">
+    </div>
+  </div>
+</nav>
+<div class="linux_header">
+  <header class="mt-5">
+    <div class="col-md-12 col-xs-12 col-12">
+      <i class="fa fa-terminal fa-5x d-lg-inline" aria-hidden="true"></i>
+      <h1> Système </h1>
+      <p>
+        Le terminal -appelé également console- est une interface alternative
+        aux interfaces graphiques modernes.
+      </p>
+
+      <p> Le non-usage de la souris peut rendre le terminal moins intuitif d’accès que l’interface graphique.
+
+        Il se présente sous la forme d’un simple écran où l’on peut rentrer des commandes système par l’usage de mots-clefs.
+      </p>
+
+      <p>Pour certaines manipulations requérant de nombreux clics de souris et de navigation dans
+        des dossiers, le terminal peut se révéler bien plus concis en tapant simplement une commande.
+      </p>
+
+      <p>
+        Pour indiquer la marche à suivre pour résoudre un problème, il est également
+        plus simple de lister des commandes à entrer plutôt que
+        d’expliquer à l’écrit une suite de clics et de navigation.
+      </p>
+    </div>
+  </header>
+</div>
+
+<section class="content--right">
+  <h1>Commandes de base</h1>
+  <p><code> man [commande] </code> Afficher une page du manuel dédié à l’utilisation de la commande passée en paramètre.
+    À connaître absolument !
+  </p>
+  <h1>Commandes de navigation</h1>
+  <p><code>cd [chemin] </code>  Se déplacer dans le répertoire passé en paramètre.</p>
+  <p><code> pwd </code>  Afficher le chemin du répertoire courant.</p>
+  <p><code> ls </code>  Lister le contenu du répertoire courant.</p>
+
+  <h1>commandes de manipulation de fichiers/dossiers</h1>
+  <p><code> touch [nomFichier] </code>  Créer le fichier passé en paramètre.</p>
+  <p><code> cat [nomFichier] </code>  Afficher dans le terminal le contenu du fichier passé en paramètre.</p>
+  <p><code> cp [nomFichier/nomDossier chemin] </code>  Copier le fichier/dossier dans le répertoire passé en paramètre.</p>
+  <p><code> mv [nomFichier/nomDossier chemin] </code> Déplacer le fichier/dossier dans le répertoire passé en paramètre.
+    Si le chemin indique le fichier/dossier, le fichier/dossier est simplement renommé.
+  </p>
+  <p><code>rm [nomFichier] </code> Effacer le fichier passé en paramètre.</p>
+  <p><code>mkdir [nomDossier] </code> Créer le dossier passé en paramètre.</p>
+  <p><code>rmdir [nomDossier] </code> Effacer le dossier passé en paramètre.</p>
+
+  <h1>Commandes de gestion des droits d’utilisateurs</h1>
+  <p><code>sudo </code> Acquérir temporairement les droits de super-utilisateur.</p>
+  <p><code>su </code> Acquérir  les droits d’administrateur.</p>
+
+</section>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</html>
